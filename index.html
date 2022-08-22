@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header::before{
+            content: "";
+            background: url('img/bg.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+
+        }
+        
+        .left {
+            display: inline-block;
+            position: absolute;
+            width: 84px;
+            height: 94px;
+            left: 60px;
+            top: 4px;
+            /* border: 2px solid red; */
+        }
+        
+        .left img {
+            width: 64px;
+            filter: invert(100%);
+            padding: 0px 10px;
+        }
+        
+        .left div {
+            text-align: center;
+            font-size: small;
+            line-height: 0px;
+        }
+        
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+        
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            /* border: 2px solid yellow; */
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 16px 23px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: grey;
+        }
+        
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: white;
+            background: #131416;
+            padding: 4px 10px;
+            /* border: 2px solid grey; */
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: rgb(36, 36, 36);
+        }
+        
+        .container {
+            /* border: 2px solid white; */
+            margin: 82px 63px;
+            padding: 37px 101px;
+            width: 33%;
+            border-radius: 20px;
+        }
+        
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 9px;
+            border: 2px solid black;
+            margin: 7px auto;
+            font-size: 14px;
+            border-radius: 13px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        .container button {
+            display: block;
+            width: 424px;
+            margin: 20px auto;
+        }
+        
+        .container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left Box For Logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>Rudra Fitness</div>
+        </div>
+        <!-- Mid Box For Nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active"> Home </a></li>
+                <li> <a href="#" class="active"> About Us </a></li>
+                <li> <a href="#" class="active"> Fitness Calculator </a></li>
+                <li> <a href="#" class="active"> Contact Us </a></li>
+            </ul>
+        </div>
+        <!-- Right Box For buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Katni now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
